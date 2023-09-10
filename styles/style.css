@@ -97,6 +97,14 @@ fieldset {
   cursor: pointer;
 }
 
+.search-form__checkbox-list .search-form__label:hover {
+  text-decoration: underline;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+}
+
 .search-form__textfield {
   color: rgba(255, 255, 255, 0.70);
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -112,6 +120,10 @@ fieldset {
   width: 225px;
 }
 
+.search-form__textfield:focus {
+  outline: none;
+}
+
 .search-form__checkbox-list {
   display: flex;
   flex-direction: row;
@@ -124,6 +136,15 @@ fieldset {
   background-color: #1b1919;
   border: 1px solid #fff;
   margin-right: 5px;
+}
+
+.search-form__pseudo-checkbox:active::after {
+  content: '';
+  display: block;
+  background-color: #FFF;
+  width: 15px;
+  height: 15px;
+  margin: 1px 1px;
 }
 
 .search-form__submit-button {
@@ -222,7 +243,6 @@ fieldset {
 
 .button {
   cursor: pointer;
-  /* padding: 6px 0; */
   color: #FFF;
   text-align: center;
   font-family: Fira Sans Condensed;
@@ -235,6 +255,22 @@ fieldset {
   height: 34px;
   width: 100%;
   background-color: transparent;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: #545050;
 }
 
 .visually-hidden {
