@@ -9,13 +9,15 @@ html {
 }
 
 .page {
-  inline-size: 1200px;
-  block-size: 100%;
+  display: flex;
+  align-items: center;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  inline-size: 1200px;
+  block-size: 100%;
 }
 
 h1,
@@ -42,20 +44,17 @@ fieldset {
 }
 
 .content {
-  width: 100%;
-  height: 100%;
-  padding: 133px 0;
   display: flex;
   flex-direction: row;
   column-gap: 30px;
-  align-content: end;
+  margin: 0 30px;
 }
 
 .result {
   display: flex;
   flex-direction: column;
-  row-gap: 16px;
   justify-content: end;
+  row-gap: 16px;
 }
 
 .result__video {
@@ -73,18 +72,18 @@ fieldset {
 
 .search-form {
   display: flex;
-  gap: 40px;
   align-items: center;
+  gap: 40px;
 }
 
 .search-form__fieldset-title {
+  margin-bottom: 5px;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
   line-height: normal;
-  margin-bottom: 5px;
 }
 
 .search-form__label {
@@ -102,18 +101,18 @@ fieldset {
 }
 
 .search-form__textfield {
-  color: rgba(255, 255, 255, 0.7);
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  appearance: none;
-  background-color: transparent;
+  width: 225px;
   border: none;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-  width: 225px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+  background-color: transparent;
+  appearance: none;
 }
 
 .search-form__textfield:focus {
@@ -129,27 +128,27 @@ fieldset {
 .search-form__pseudo-checkbox {
   width: 19px;
   height: 19px;
-  background-color: #1b1919;
-  border: 1px solid #fff;
   margin-right: 5px;
+  border: 1px solid #fff;
+  background-color: #1b1919;
 }
 
 .search-form__pseudo-checkbox:active::after {
   content: '';
   display: block;
-  background-color: #fff;
   width: 15px;
   height: 15px;
   margin: 1px 1px;
+  background-color: #fff;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   content: '';
   display: block;
-  background-color: #fff;
   width: 15px;
   height: 15px;
   margin: 1px 1px;
+  background-color: #fff;
 }
 
 .search-form__submit-button {
@@ -159,8 +158,8 @@ fieldset {
 .content__details {
   display: flex;
   flex-direction: column;
-  row-gap: 26px;
   justify-content: end;
+  row-gap: 26px;
   width: auto;
   height: auto;
 }
@@ -168,9 +167,9 @@ fieldset {
 .title {
   color: #fff;
   font-family: 'Oswald', sans-serif;
+  font-weight: 700;
   font-size: 75px;
   font-style: normal;
-  font-weight: 700;
   line-height: 94%;
   text-transform: uppercase;
 }
@@ -178,9 +177,9 @@ fieldset {
 .content__accent {
   color: #545050;
   font-family: 'Oswald', sans-serif;
+  font-weight: 700;
   font-size: 75px;
   font-style: normal;
-  font-weight: 700;
   line-height: 94%;
   text-transform: uppercase;
 }
@@ -201,9 +200,9 @@ fieldset {
 
 .content__card-link {
   display: block;
-  text-decoration: none;
-  color: #fff;
   margin: 2px 2px;
+  color: #fff;
+  text-decoration: none;
 }
 
 .content__card-link_current {
@@ -239,9 +238,9 @@ fieldset {
 .content__video-card-title {
   color: #fff;
   font-family: 'Oswald', sans-serif;
+  font-weight: 700;
   font-size: 30px;
   font-style: normal;
-  font-weight: 700;
   line-height: 100%;
   text-transform: uppercase;
 }
@@ -250,9 +249,9 @@ fieldset {
   padding-top: 6px;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
   line-height: 16.2px;
 }
 
@@ -268,19 +267,19 @@ fieldset {
 }
 
 .button {
-  cursor: pointer;
+  width: 100%;
+  height: 34px;
+  border: 1px solid #fff;
   color: #fff;
-  text-align: center;
   font-family: Fira Sans Condensed;
+  font-weight: 700;
   font-size: 18px;
   font-style: normal;
-  font-weight: 700;
   line-height: normal;
-  border: 1px solid #fff;
   text-align: center;
-  height: 34px;
-  width: 100%;
+  text-align: center;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .button:focus {
@@ -301,10 +300,10 @@ fieldset {
 
 .visually-hidden {
   position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
   clip-path: inset(50%);
   white-space: nowrap;
 }
