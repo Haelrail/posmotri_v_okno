@@ -65,9 +65,9 @@ fieldset {
 
 .result__video-container {
   position: relative;
+  margin-bottom: 16px;
   inline-size: 711px;
   block-size: 386px;
-  margin-bottom: 16px;
 }
 
 .search-form {
@@ -137,15 +137,7 @@ fieldset {
   background-color: #1b1919;
 }
 
-.search-form__pseudo-checkbox:active::after {
-  content: '';
-  display: block;
-  width: 15px;
-  height: 15px;
-  margin: 1px 1px;
-  background-color: #fff;
-}
-
+.search-form__pseudo-checkbox:active::after,
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   content: '';
   display: block;
@@ -165,6 +157,7 @@ fieldset {
 }
 
 .title {
+  padding-top: 0;
   color: #fff;
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
@@ -172,7 +165,6 @@ fieldset {
   font-style: normal;
   line-height: 94%;
   text-transform: uppercase;
-  padding-top: 0;
 }
 
 .content__accent {
@@ -187,9 +179,9 @@ fieldset {
 
 .content__list {
   position: relative;
-  block-size: 319px;
-  overflow: auto;
   padding-top: 20px;
+  overflow: auto;
+  block-size: 319px;
 }
 
 .content__list-item {
@@ -216,8 +208,8 @@ fieldset {
 }
 
 .content__card-link:active {
-  background-color: #545050;
   text-decoration: none;
+  background-color: #545050;
 }
 
 .content__card-link:focus {
@@ -235,6 +227,7 @@ fieldset {
 }
 
 .content__video-card-title {
+  padding: 4px 2px 6px;
   color: #fff;
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
@@ -242,7 +235,6 @@ fieldset {
   font-style: normal;
   line-height: 100%;
   text-transform: uppercase;
-  padding: 4px 2px 6px;
 }
 
 .content__video-card-description {
@@ -256,11 +248,11 @@ fieldset {
 }
 
 .content__video-card-thumbnail {
+  margin: 2px 2px 2px 0;
   object-fit: cover;
   object-position: center;
   inline-size: 194px;
   block-size: 103px;
-  margin: 2px 2px 2px 0;
 }
 
 .more-button {
@@ -269,8 +261,8 @@ fieldset {
 
 .button {
   width: 100%;
-  padding: 5px 0;
   border: 1px solid #fff;
+  padding: 5px 0;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 700;
@@ -296,8 +288,8 @@ fieldset {
 }
 
 .button:active {
-  background-color: #545050;
   text-decoration: none;
+  background-color: #545050;
 }
 
 .visually-hidden {
